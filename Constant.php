@@ -1,7 +1,7 @@
 <?php 
 
 require_once "data/Mahasiswa.php";
-$joko = new Mahasiswa();
+$joko = new Mahasiswa("Budi", "Salatiga");
 
 // Constant merupakan data yang tidak bisa diubah
 // Cara akses constant

@@ -4,7 +4,7 @@
 // Cara Deklarasi dari Class Mahasiswa
 require_once "data/Mahasiswa.php";
 
-$mahasiswa1 = new Mahasiswa();
+$mahasiswa1 = new Mahasiswa("Jenny", "Blotongan");
 
 $mahasiswa1->name = "Dhandy";
 $mahasiswa1->address = "Perum Kotabaru gg.IV";

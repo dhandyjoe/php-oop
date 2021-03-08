@@ -22,6 +22,14 @@ class Mahasiswa{
 
 
     // FUNCTION
+
+    function __construct($name, string $address)
+    {
+        // Constructor adalah function yang dipanggil ketika membuat object
+        $this->name = $name;
+        $this->address = $address;
+    }
+
     function sayHello(?string $name) {
         // this keyword menunjuk pada properties di object tersebut.
         // Contoh bisa diliat di file Function.php

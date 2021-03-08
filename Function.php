@@ -7,11 +7,11 @@ require_once "data/Mahasiswa.php";
     menggunakan kata kunci -> lalu diikuti nama function-nya
 */
 
-$jenny = new Mahasiswa();
+$jenny = new Mahasiswa("Dhandy", "Tingkir");
 $jenny->name = "Jenny";
 $jenny->sayHello("dhandy");
 
-$bona = new Mahasiswa();
+$bona = new Mahasiswa("Jenny", "Blotongan");
 $bona->name = "Bona";
 $bona->sayHello(null);
 
