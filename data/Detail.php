@@ -2,7 +2,7 @@
 
 class Detail {
 
-    private string $name;
+    protected string $name;
     private int $level;
     private string $skill;
 
@@ -17,6 +17,18 @@ class Detail {
         echo "Name : $this->name" . PHP_EOL;
         echo "Level : $this->level" . PHP_EOL;
         echo "Skill : $this->skill" . PHP_EOL;
+    }
+
+    function setSkill (string $skill): string {
+        return $this->skill = $skill;
+    }
+}
+
+// Contoh penerapan Protected
+class DetailDummy extends Detail {
+
+    public function info() {
+        echo "Name : $this->name" . PHP_EOL;
     }
 
 }

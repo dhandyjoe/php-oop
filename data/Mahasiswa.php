@@ -35,15 +35,29 @@ class Mahasiswa{
         // Contoh bisa diliat di file Function.php
 
         if(is_null($name)) {
-            echo "Hi, my name is $name" . PHP_EOL;
+            echo "Hi, my name is null" . PHP_EOL;
         } else {
-            echo "Hi $name, my name is $this->name" . PHP_EOL;
+            echo "Hi $name, my name is $this->name at Class Mahasiswa" . PHP_EOL;
         }
     }
 
     function infoAuthor() {
         // self keyword digunakan saat ingin memanggil constant di kelas yang sama.
         echo "Author : " . self::AUTHOR;
+    }
+}
+
+class Maba extends Mahasiswa {
+
+    function sayHello(?string $name) {
+        // this keyword menunjuk pada properties di object tersebut.
+        // Contoh bisa diliat di file Function.php
+
+        if(is_null($name)) {
+            echo "Hi, my name is null" . PHP_EOL;
+        } else {
+            echo "Hi $name, my name is $this->name at Class Maba" . PHP_EOL;
+        }
     }
 
 }

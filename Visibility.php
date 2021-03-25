@@ -20,6 +20,15 @@ require_once "data/Detail.php";
 $pudge = new Detail("Pudge", 25, "Eject");
 $pudge->getHero();
 
+echo "\n";
+
+$pudge->setSkill("Rot");
+$pudge->getHero();
+
 // $pudge->level = "asd";    --> Error, karena properties level bersifat private
 
+echo "\n";
+
+$dummy = new DetailDummy("Windranger", 10, "Powershot");
+$dummy->info();
 ?>
